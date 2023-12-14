@@ -1,3 +1,5 @@
-def call(String name, String dayofweek) {
-  sh "echo Hello ${name}, Today is ${dayofweek}."
-}
+  def runMyPython() {
+    final pythonContent = libraryResource('test.py')
+    writeFile(file: 'test.py', text: pythonContent)
+    sh('python ./test.py')
+  }
