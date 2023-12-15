@@ -1,3 +1,3 @@
 def runPythonScript() {
-    sh 'python myscript.py'
+    sh 'python test.py'
 }
