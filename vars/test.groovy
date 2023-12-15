@@ -1,5 +1,5 @@
 def runPythonScript() {
-    sh 'python script.py'
+    sh 'python test.py'
 }
 
 return this
