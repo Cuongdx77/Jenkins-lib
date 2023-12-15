@@ -1,4 +1,4 @@
 def runPythonScript() {
     def workspacePath = env.WORKSPACE
-    sh "python ${workspacePath}/myscript.py"
+    sh "python ${workspacePath}/test.py"
 }
