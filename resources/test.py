@@ -1,1 +1,2 @@
-print("Hello from Python script!")
+  #!/usr/bin/env python
+  print("Hello")
