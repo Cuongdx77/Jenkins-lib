@@ -1,6 +1,5 @@
-  def runMyPython() {
-    final pythonContent = libraryResource('test.py')
-    // There are definitely better ways to do this without having to write to the consumer's workspace
-    writeFile(file: 'test.py', text: pythonContent)
-    sh('python ./test.py')
-  }
+script{
+    def yourScriptAsaString = libraryResource '../resources/test.py' 
+    writeFile file: 'test.py', text: yourScriptAsaString
+    sh "python test.py"
+}
