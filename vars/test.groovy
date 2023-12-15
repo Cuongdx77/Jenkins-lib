@@ -1,5 +1,5 @@
-script{
-    def yourScriptAsaString = libraryResource '../resources/test.py' 
-    writeFile file: 'test.py', text: yourScriptAsaString
-    sh "python test.py"
-}
+  def runMyPython() {
+    final pythonContent = libraryResource('../resources/my_file.py')
+    writeFile(file: 'test.py', text: pythonContent)
+    sh('python ./test.py')
+  }
