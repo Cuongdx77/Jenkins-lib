@@ -1,5 +1,3 @@
 def runPythonScript() {
-    sh 'python test.py'
+    sh 'python Jenkins-lib/resources/test.py'
 }
-
-return this
