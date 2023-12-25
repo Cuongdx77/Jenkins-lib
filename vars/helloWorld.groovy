@@ -1,4 +1,4 @@
-def runPythonScript() {
-    def workspacePath = env.WORKSPACE
-    sh "python ${workspacePath}/test.py"
-}
+  def call(Map config = [:]) {
+    test(name: 'test.py')
+    sh "python ./test.py"
+  }
