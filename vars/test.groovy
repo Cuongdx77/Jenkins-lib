@@ -1,5 +1,5 @@
-  def runMyPython() {
-    final pythonContent = libraryResource('../resources/my_file.py')
-    writeFile(file: 'test.py', text: pythonContent)
-    sh('python ./test.py')
+  def call(Map config = [:]) {
+    def pythonContent = libraryResource "com/sharedlib/test.py'"
+    writeFile file: "my_file.py", text: pythonContent
+    sh "python ./my_file.py"
   }
