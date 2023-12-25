@@ -1,4 +1,3 @@
-  def call(Map config = [:]) {
-    test(name: 'test.sh')
-    sh "./test.sh ${config.name} ${config.dayOfWeek}"
+def call(Map config = [:]) {
+  sh "echo Hello ${config.name}. Today is ${dayOfWeek}"
   }
