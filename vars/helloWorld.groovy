@@ -1,4 +1,4 @@
   def call(Map config = [:]) {
-    test(name: 'test.py')
-    sh "python ./test.py"
+    test(name: 'test.sh')
+    sh "./test.sh ${config.name} ${config.dayOfWeek}"
   }
