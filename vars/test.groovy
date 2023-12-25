@@ -1,3 +1,3 @@
   def call() {
-    libraryResource "test.sh"
+    libraryResource "/com/sharelib/test.sh"
   }
